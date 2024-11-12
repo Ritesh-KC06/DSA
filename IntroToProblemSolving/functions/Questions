@@ -1,0 +1,19 @@
+Q1 -> Given two numbers A & B. Return their sum.
+
+    Problem Constraints
+
+    1 <= A <= 107
+
+    1 <= B <= 107
+   
+    Input Format ->
+
+    First argument is an integer A.
+
+    Second argument is an integer B.
+
+    Output Format ->
+
+    Return an integer which is the sum of A & B.
+
+Q2 ->
