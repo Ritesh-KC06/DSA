@@ -35,5 +35,14 @@ public class Ffunction {
         double ans = Math.round(F * 100) / 100d;
         return ans;
     }
-    
+
+    public static int GoCorona (int A, int B, int C) {
+        int day = 0;
+        while (C > 0) {
+            C = C + B;
+            C = C - A;
+            day++;
+        }
+        return day;
+    }
 }

@@ -104,3 +104,29 @@ Q6 -> Problem Description:
     Java : Use Math.round(val*100)/100d to round upto two decimals
     The formula to convert Celsius to Fahrenheit is: F = (9/5 * C) + 32
     You need not take input in this problem, you need to only implement the function provided.
+
+Q7 ->  Problem Description
+    Given three integers, A, B and C. You have to find the number of days it will take to reach zero cases of Corona in a city.
+    
+    A - Average cases recovered in a day of the corona.
+    B - Number of new cases of corona daily.
+    C - Current active cases of the corona.
+    
+    Return the minimum number of days it will take to reach 0 active cases of Covid.
+    
+    Problem Constraints
+    
+    1 <= B < A <= 5000
+    1 <= C <= 1000
+    
+    
+    Input Format
+    
+    The first argument will be integer A, which denotes the recovered cases in a day.
+    The second argument will be integer B, which denotes the new cases in a day.
+    The third argument will be integer C, which denotes the currently active cases.
+    
+    
+    Output Format
+    
+    Return an integer which denotes the minimum days to reach 0 cases.

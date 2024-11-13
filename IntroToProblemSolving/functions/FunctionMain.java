@@ -6,6 +6,7 @@ public class FunctionMain {
         
         @SuppressWarnings("resource")
         Scanner scn = new Scanner(System.in);
+
         System.out.println("Input 1");
         int A = scn.nextInt();
         System.out.println("Input 2");
@@ -37,6 +38,17 @@ public class FunctionMain {
 
         double Fahrenheit = Ffunction.temperature(celcius);
         System.out.println("Temperature in Fahrenheit is " + Fahrenheit);
+        
+        //Q7 ->
+        System.out.println("Average cases recovered in a day");
+        int H = scn.nextInt();
+        System.out.println("Number of new cases");
+        int I = scn.nextInt();
+        System.out.println("Current active cases");
+        int J = scn.nextInt();
+
+        int K = Ffunction.GoCorona(H, I, J);
+        System.out.println("minimum days to reach 0 cases = " + K);
 
     }
 }
