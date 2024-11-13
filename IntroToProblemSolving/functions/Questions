@@ -16,4 +16,91 @@ Q1 -> Given two numbers A & B. Return their sum.
 
     Return an integer which is the sum of A & B.
 
-Q2 ->
+Q2 -> Problem Description
+
+    Given two numbers A & B. Return their product.
+
+
+    Problem Constraints
+
+    1 <= A <= 104
+
+    1 <= B <= 104
+
+    Input Format
+
+    First argument is an integer A.
+
+    Second argument is an integer B.
+
+    Output Format
+
+    Return an integer which is the product of A & B.
+
+Q3 ->Problem Description
+
+    Given a number A. Return square of the number.
+
+    Problem Constraints
+
+    1 <= A <= 104
+
+    Input Format
+
+    First argument is an integer A.
+
+    Output Format
+
+    Return an integer which is the square of A.
+
+Q4 -> Problem Description
+
+    You are given an integer A.
+
+    You have to find the value of cube of A i.e, A3.
+
+
+    Problem Constraints
+
+    1 <= A <= 1000
+
+    Input Format
+
+    First and only parameter is an integer A.
+
+    Output Format
+
+    Single line integer output.
+
+Q5 -> Problem Description
+
+    Given two integers A and B, where A is divisible by B.
+
+    Print the value of quotient, when A is divided by B.
+
+    Note: It is not necessary that A is completely divisible by B
+
+    Problem Constraints
+
+    -109 <= A, B <= 109
+
+    Input Format
+
+    First argument is a single integer A.
+    Second argument is a single integer B.
+
+    Output Format
+
+    Print a single integer in a single line.
+
+Q6 -> Problem Description:
+
+    Given the temperature of a day in Degrees Celsius, convert this given temperature from Celsius to Fahrenheit. Complete the function to do so. Round the output up to 2 decimal places
+
+    Note:
+
+    To round up the values -
+    Python : Use round(ans,2) to round up ans to two decimals
+    Java : Use Math.round(val*100)/100d to round upto two decimals
+    The formula to convert Celsius to Fahrenheit is: F = (9/5 * C) + 32
+    You need not take input in this problem, you need to only implement the function provided.
