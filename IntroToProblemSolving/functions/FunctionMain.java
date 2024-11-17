@@ -15,7 +15,7 @@ public class FunctionMain {
         //Q1 ->
         int C = Ffunction.sum (A, B);
         System.out.println("Sum of " + A + " & " + B + " = " + C);
-
+        
         //Q2 ->
         int D = Ffunction.multiply(A, B);
         System.out.println("Product of " + A + " & " + B + " = " + D);
