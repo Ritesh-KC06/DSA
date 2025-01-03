@@ -1,0 +1,141 @@
+Q1 -> Write a program to print the input array A of size N in reverse order where you have to take integer N and further N elements as input from user.
+
+Problem Constraints
+
+1 <= N <= 1000  
+1 <= A <= 1000
+Input Format
+
+A single line representing **N** followed by N integers of the array **A**
+
+Q2 -> Take input an array A of size N and write a program to print maximum and minimum elements of the input. The only line of the input would contain a single integer N that represents the length of the array followed by the N elements of the input array A.
+
+Problem constraints
+1 <= N <= 1000
+1 <= A <= 1000
+
+
+Input Format
+The first line contains a single integer N representing the length of the array A followed by N elements of the array A.
+
+
+Output Format
+A single line output containing two space-separated integers.
+The first integer is the maximum value of the array.
+The second integer is the minimum value of the array. 
+
+There is **no space** after the minimum value in the output format. 
+There is only a **single space** between the maximum and minimum value.
+
+
+Example Input
+
+Input 1:
+5 1 2 3 4 5
+Input 2:
+4 10 50 40 80
+
+Example Output
+
+Output 1:
+5 1
+Output 2:
+80 10
+Note: There is no space after the minimum value in the output format.
+There is only a single space between the maximum and minimum value.
+
+Q3 -> Write a program to print sum of elements of the input array A of size N.
+
+Note: User is supposed to write a program from scratch to add the elements of the input array and print the result.
+
+Problem Constraints
+1 <= N <= 1000
+1 <= A <= 1000
+
+Input Format
+- The first integer N denotes the number of integers in the array.
+- The next N integers denotes the element of the array A.
+
+Output Format
+A single integer containing sum of elements from the input array.
+
+Example Input
+Input 1:
+5 1 2 3 4 5
+Input 2:
+4 10 50 40 80
+
+Example Output
+Output 1:
+15
+Output 2:
+180
+
+Q4 -> Write a program that returns the product of all elements present in the array.
+
+Note: The list with elements is already passed as an argument to the function. User don't need to take any input. Just perform the task on the passed arguments and return the required result.
+
+Constraints:
+1 <= |A| <= 100
+1 <= A <= 100
+Note: It is guaranteed that the resultant product will be <= 1015
+Input Format:
+
+An integer array **A** as the function argument.
+Output Format:
+
+Product of elements in integer format
+Sample Input:
+A = [7, 9, 2, 51]
+Sample Output:
+6426
+
+Q5-> Write a program to print all negative numbers from input array A of size N. Take integer N and N elements of the array as input from user.
+
+Problem Constraints
+1 <= N <= 1000  
+-1000 <= A <= 1000
+Input Forma
+A single line representing N followed by N integers of the array A
+Output Format
+A single line containing elements from the input array which are negative in the same order.
+Note: Keep a space character (' ') at the end of the line.
+Example Input
+Input 1:
+5 1 -5 2 -8 -4
+Input 2:
+4 -1 0 -8 -1
+Example Output
+Output 1:
+-5 -8 -4 
+Output 2:
+-1 -8 -1 
+
+Q6 -> You are given a constant array A and an integer B.
+You are required to return another array where outArr[i] = A[i] + B.
+
+Problem Constraints
+1 <= A.size() <= 10000
+1 <= A[i] <= 10000
+1 <= B <= 10000
+
+Input Format
+First argument is a constant array A.
+Second argument is an integer B.
+
+Output Forma
+You have to return an integer array.
+
+Example Input
+Input 1:
+A = [1,2,3,2,1]
+B = 3
+Input 2:
+A = [1,1,10]
+B = 6
+
+Example Output
+Output 1:
+ [4,5,6,5,4] 
+Output 2:
+ [7,7,16] 
