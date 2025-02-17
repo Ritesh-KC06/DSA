@@ -68,4 +68,23 @@ public class ODArrayFunction {
         }
         return NAB;
     }
+
+    public static boolean FindK (int arr [], int K){
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] == K){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static int FrequencyK (int arr [], int K){
+        int frequency = 0;
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] == K){
+                frequency++;
+            }
+        }
+        return frequency;
+    }
 }
