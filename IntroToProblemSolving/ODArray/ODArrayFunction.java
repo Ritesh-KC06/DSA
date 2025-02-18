@@ -86,5 +86,50 @@ public class ODArrayFunction {
             }
         }
         return frequency;
+
+    }
+
+    public static void PrintOdd (int arr []) {
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] % 2 != 0) {
+                System.out.print(arr[i] + ", ");
+            }
+        }
+    }
+
+    public static void PrintEven (int arr []) {
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] % 2 == 0) {
+                System.out.print(arr[i] + ", ");
+            }
+        }
+    }
+
+    @SuppressWarnings("unused")
+    public static int [] FirstLastIndexArray (int arr [], int B) {
+        int FirstIndex = arr[0];
+        int LastIndex = arr[arr.length-1];
+        int [] ans = new int[2];
+
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] == B){
+                FirstIndex = i;
+                break;
+            } 
+        }
+        System.out.println("FirstIndex- " + FirstIndex);
+
+        for(int i=(arr.length-1); i>=0; i--){
+            if(arr[i] == B){
+                LastIndex = i;
+                break;
+            }    
+        }
+        
+        System.out.println("LastIndex- " + LastIndex);
+
+        ans[0] = FirstIndex;
+        ans[1] = LastIndex;
+        return ans;
     }
 }
