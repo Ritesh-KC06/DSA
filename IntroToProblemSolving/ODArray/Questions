@@ -261,3 +261,332 @@ Explanation 1:
 A[2] and A[3] are equal to 4.
 Explanation 2:
 A[1], A[2] and A[3] are equal to 9.
+
+Q10 ->You are provided with an integer array A. Return another array B of size same as that of A such that B[i] = A[i]3 for 1 <= i <= |A| (1 based indexing).
+
+Problem Constraints
+1 <= |A| <= 106
+1 <= A[i] <= 106
+
+Input Format
+The first and only argument is an integer array A.
+
+Output Format
+Return array B.
+
+Example Input
+Input 1 :
+A=[2, 6, 8, 1]
+Input 2 :
+A=[5]
+
+Example Output
+Output 1 :
+[8, 216, 512, 1]
+Output 2 :
+[125]
+
+Q11 -> Write a program for a given integer x and a list ls to return the first multiple of x that occurs in the list, and if there isn’t any multiple of x in the list then return -1.
+Note: The list with elements and the integer x is already passed as an argument to the function. User don't need to take any input. Just perform the task on the passed arguments and return the required result.
+
+Problem Constraints
+1 <= len(ls) <= 103
+1 <= ls[i] <= 105
+1 <= x <= 105
+
+Input Format
+First line of input is number of test cases t.
+The remaining lines contain the test cases.
+For each test case-
+First line of input is the integer x.
+Second line of input contains the elements of ls, separated by spaces.
+
+Output Format
+Return the first multiple of x from the list in integer format, else return -1.
+
+Example Input
+Input 1:
+ls = [2, 1, 2, 4, 3, 5]
+x  = 4
+Input 2:
+ls = [7, 5, 3, 17]
+x  = 2
+
+Example Output
+Output 1:
+4
+Output 2:
+-1
+
+Q12 -> Write a function to check if the given array A has consecutive duplicate elements or not. Return True if there are consecutive duplicate elements in the list else return False.
+Here by consecutive duplicates, we mean duplicates that are present at consecutive indices in the array
+
+Problem Constraints
+1 <= N <= 105
+1 <= A[i] <= 109
+
+Input Format
+An integer array A as the function argument.
+
+Output Format
+Return True or False
+
+Example Input
+Input 1:
+1
+4
+1 2 3 3
+Input 2:
+1
+2
+1 2
+
+Example Output
+Output 1:
+True
+Output 2:
+False
+
+Q13 -> You are given an integer array A, you have to return an integer array of same size whose ith element is the frequency count of A[i] in array A .
+Note:
+When comparing two elements of the ArrayList(java), make sure to use .equals() method for accurate comparison.
+Eg : To compare ith index with jth index use A.get(i).equals(A.get(j)).
+
+Problem Constraints
+1 <= len(A) <= 1000
+1 <= A[i] <= 100
+
+Input Format
+First argument is an array of integers representing array A.
+
+Output Format
+You have to return an array of integers as per the question.
+
+Example Input
+Input 1:
+A = [1, 2, 5, 1, 5, 1 ]
+
+Example Output
+Output 1:
+[3, 1, 2, 3, 2, 3]
+
+Q14 -> Given an Array of integers A, every element in it is repeated twice except one, find that unique element.
+
+Problem Constraints
+1<= Length of array A <= 103
+0<= Ai <=1000
+
+Input Format
+First argument A is the given array.
+
+Output Format
+Return an Integer X, such that X occurs once in the A.
+
+Example Input
+Input 1:
+A = [1, 4, 3, 5, 2, 3, 5, 1, 4]
+Input 2:
+A = [9, 10, 7, 10, 9, 1, 5, 1, 5]
+
+Example Output
+Output 1:
+2
+Output 2:
+7
+
+Q15 -> Given an array A, check if it is sorted in non-decreasing order or not. Non-decreasing order means that the numbers in a sequence can stay the same or increase, but they cannot decrease.
+
+Problem Constraints
+1 <= Ai <= 109
+1 <= |A| <= 105
+
+Input Format
+The first and only argument contains an integer array A.
+
+Output Format
+Return 1 if array is sorted else return 0.
+
+Example Input
+Input 1:
+ A = [1, 2, 2] 
+Input 2:
+ A = [1, 2, 1] 
+
+Example Output
+Output 1:
+ 1
+Output 2:
+ 0
+
+ Q16 -> You are given an integer array A and an integer B. You are required to return the count of pairs having sum equal to B.
+NOTE: pair (i,j) and (j,i) are same.
+
+Problem Constraints
+1 <= A.size() <= 10000
+1 <= A[i] <= 10000
+1 <= B <= 10000
+
+Input Format
+First argument is an integer array A.
+Seond argument is an integer B.
+
+Output Format
+You have to return an integer representing count of required pairs.
+
+Example Input
+Input 1:
+A = [1,2,3,2,1]
+B = 5
+Input 2:
+A = [1,1,1]
+B = 2
+
+Example Output
+Output 1:
+2
+Output 2:
+3
+
+Q17 -> Write a program to input N numbers array, a number X and a number Y from user and insert an element Y in it at specified position X. X is based on 1-based indexing
+
+Note: When an element is inserted at position X, all elements that were already present at position >= X, gets shifted to one position right, not replaced.
+
+Problem Constraints
+1 <= N <= 100
+1 <= A[i] <= 1000
+1 <= X <= N
+1 <= Y <= 1000
+
+Input Format
+First line is N which represents number of elements.
+Second line contains N space separated integers.
+Third line is X position where Y has to be inserted.
+Fourth line is Y which is the value to be inserted.
+
+Output Format
+N+1 space separated integers of the input array after inserting the element at required position.
+
+Example Input
+Input 1:
+5
+2 3 1 4 2
+3
+5
+
+Example Output
+Output 1:
+2 3 5 1 4 2
+
+Q18 -> Write a program to input N numbers array, A from the user and an integer X and print the array by deleting element at specified position X.
+Note: The first element is located at position 1, the second element is located at position 2, and so on.
+
+Problem Constraints
+2 <= N <= 100
+1 <= A[i] <= 1000
+1 <= X <= N
+
+Input Format
+First line is N which means number of elements.
+Second line contains N space separated integers.
+Third line is X position which has to be deleted.
+
+Output Format
+N-1 space separated integers of the input array after deleting the element at required position.
+
+Example Input
+Input 1:
+5
+2 3 1 4 2
+3
+Input 2:
+2
+4 5
+2
+
+Example Output
+Output 1:
+2 3 4 2
+Output 2:
+4
+
+Q19 -> You are given an integer array A. Now your task is to find the inverse of A. Now, the inverse of the array is A will be an array in which we change the positions of the values as their indices and indices as values.
+
+So, array A = [2, 0, 1]
+- Now 2 is at index 0. So, place 0 at index 2.
+- 0 is at index 1. So, place 1 at index 0.
+- 1 is at index 2. So, place 2 at index 1.
+
+So, the inverse of A will be [1, 2, 0]
+
+Problem Constraints
+1 <= |A| <= 105
+0 <= A[i] < |A| (All elements are distinct)
+
+Input Format
+The first and the only argument is an array A.
+
+Output Format
+Return an array which is the inverse of the given array A.
+
+Example Input
+Input 1:
+A = [2, 0, 1]
+Input 2:
+A = [3, 1, 0, 2]
+
+Example Output
+Output 1:
+[1, 2, 0]
+Output 2:
+[2, 1, 3, 0]
+
+Q20 -> Write a program that reads an integer array A from input and modifies the array by shifting each element to the right by one position and by shifting the last element to the first position. After performing the shifting operation, print the modified array.
+**Note:** Ensure there is a space character (' ') at the end of the line.
+
+Problem Constraints
+1 <= N <= 105 1 <= A[i] <= 109
+
+Input Format
+The first line of the input is the size of the array N. The second line of the input is N integers of the array separated by space.
+
+Output Format
+Print each element of the array, followed by a space (including the last element).
+
+Example Input
+Input 1:
+5
+1 2 3 4 5
+Input 2:
+3
+2 3 1 
+
+Example Output
+Output 1:
+5 1 2 3 4
+Output 2:
+1 2 3
+
+Q21 -> You are given an integer array A having N integers.
+You have to construct and return an array containing all the adjacent / consecutive element differences (A[i + 1] - A[i]) in the same order.
+
+Problem Constraints
+1 <= N <= 105
+1 <= A[i] <= 109
+
+Input Format
+First and only argument is an integer array A.
+
+Output Format
+Return an integer array.
+
+Example Input
+Input 1:
+ A = [6, 2, 4, 4, 3]
+Input 2:
+ A = [2]
+
+Example Output
+Output 1:
+ [-4, 2, 0, -1]
+Output 2:
+ []

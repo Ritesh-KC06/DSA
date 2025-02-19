@@ -132,4 +132,147 @@ public class ODArrayFunction {
         ans[1] = LastIndex;
         return ans;
     }
+
+    public static long [] CubeArray (int arr []){
+        long [] B = new long [arr.length];
+        for (int i=0; i<arr.length; i++){
+            B[i] = (long)arr[i]*arr[i]*arr[i];
+        }
+        return B;
+    }
+
+    public static int FirstMultiple (int arr [], int B) {
+        int ans = -1;
+        for (int i=0; i<arr.length; i++){
+            if (arr[i] % B == 0){
+                ans = arr[i];
+                return ans;
+            }
+        }
+        return ans;
+    }
+
+    public static boolean FindDuplicate (int arr []){
+        for (int i=1; i<arr.length; i++){
+            if(arr[i] == arr[i-1]){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static int [] FrequencyCountArray (int arr []){
+        int [] ans = new int [arr.length];
+
+        for (int i=0; i<arr.length; i++){
+            ans[i] = ODArrayFunction.FrequencyK(arr, arr[i]);
+        }
+        return ans;
+
+    }
+
+    public static void PrintArray (int arr []){
+        System.out.print("{ ");
+        for (int i=0; i<arr.length; i++){
+            if (i != (arr.length-1)){
+                System.out.print(arr[i] + ", ");
+            } else {
+                System.out.print(arr[i]);
+            }
+        }
+        System.out.print(" }");
+        System.out.println("");
+    }
+
+    public static int UniqIntegerWODuplicate (int arr []){
+        int ans = arr[0];
+        for (int i=0; i<arr.length; i++){
+            if (ODArrayFunction.FrequencyK(arr, arr[i]) == 1 ){
+                ans = arr[i];
+                break;
+            }
+        }
+        return ans;
+    }
+
+    public static boolean SortedArrayIncreasing (int arr []){
+        boolean ans = true;
+
+        for (int i=1; i<arr.length; i++){
+            if (arr[i] >= arr[i-1]){
+                ans = true;
+            } else {
+                ans = false;
+                break;
+            }
+        }
+        return ans;
+    }
+
+    public static int CountPairofSumB (int arr [], int B){
+        int ans = 0;
+        for (int i=0; i<(arr.length-1); i++){
+            for (int j=(i+1); j<arr.length; j++){
+                if((arr[i] + arr[j]) == B){
+                    ans ++;
+                }
+            }
+        }
+        return ans;
+    }
+
+    public static int [] insertNArray (int arr[], int A, int B){
+        int [] ans = new int [(arr.length + 1)];
+        for (int i=0; i<(B-1); i++){
+            ans[i] = arr[i];
+        }
+        ans[B-1] = A;
+        for (int i=B; i<ans.length; i++){
+            ans[i] = arr[i-1];
+        }
+        return ans;
+    }
+
+    public static int [] removeSArray (int arr[], int A){
+        int [] ans = new int [(arr.length - 1)];
+        for (int i=0; i<(A-1); i++){
+            ans[i] = arr[i];
+        }
+        for (int i=A-1; i<ans.length; i++){
+            ans[i] = arr[i+1];
+        }
+        return ans;
+    }
+
+    public static int [] IndexArray (int arr []){
+        int [] ans = new int [arr.length];
+
+        for (int i=0; i<arr.length; i++){
+            ans[arr[i]] = i;
+        }
+
+        return ans;
+    }
+
+    public static int [] LastFirstArray (int arr []){
+        int [] ans = new int [arr.length];
+
+        for (int i=0; i<(arr.length-1); i++){
+            ans [i+1] = arr[i];
+        }
+        ans[0] = arr[(arr.length-1)];
+
+        return ans;
+    }
+
+    public static int [] AdjDiffArray (int arr []){
+        int [] ans = new int [arr.length - 1];
+
+        for (int i=1; i<arr.length; i++){
+            ans[i-1] = arr[i] - arr[i-1];
+        }
+
+        return ans;
+    }
+
 }
