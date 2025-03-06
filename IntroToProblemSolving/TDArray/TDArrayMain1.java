@@ -47,6 +47,20 @@ public class TDArrayMain1 {
         int [][] Sum2Mat = TDArrayFunction.TMatrixSum(mat, mat);
         System.out.println("Sum of two Matrix- ");
         TDArrayFunction.Print2DArray(Sum2Mat);
+
+        //Q7 ->
+        int [] Max2DArrayRow = TDArrayFunction.FindMax2DArrayRow(mat);
+        System.out.println("Output 1D Array with max in a row of Matrix- ");
+        ODArrayFunction.PrintArray(Max2DArrayRow);
+
+        //Q8 ->
+        boolean EqualMat = TDArrayFunction.EqualMatrix(mat, Sum2Mat);
+        System.out.println("Given two matrices are equal- " + EqualMat);
+
+        //Q9 ->
+        int [][] SubMat = TDArrayFunction.SubtractionMatrix(mat, Sum2Mat);
+        System.out.println("Subtraction Matrix- ");
+        TDArrayFunction.Print2DArray(SubMat);
     }
     
 }

@@ -125,4 +125,50 @@ public class TDArrayFunction {
         }
         return ans;
     }
+
+    public static int[] FindMax2DArrayRow (int [][] arr){
+        int N = arr.length;
+        int M = arr[0].length;
+        int [] ans = new int[N];
+
+        for(int i=0; i<N; i++){
+            int max = arr[i][0];
+            for(int j=0; j<M; j++){
+                if (arr[i][j] >= max){
+                    max = arr[i][j];
+                }
+            }
+            ans[i] = max;
+        }
+        return ans;
+    }
+
+    public static boolean EqualMatrix (int [][] mat1, int [][] mat2){
+        int N = mat1.length;
+        int M = mat1[0].length;
+        boolean ans = true;
+
+        for(int i=0; i<N; i++){
+            for(int j=0; j<M; j++){
+                if(mat1[i][j] != mat2[i][j]){
+                    ans = false;
+                    break;
+                }
+            }
+        }
+        return ans;
+    }
+
+    public static int[][] SubtractionMatrix (int [][] mat1, int [][] mat2){
+        int N = mat1.length;
+        int M = mat1[0].length;
+        int [][] ans = new int[N][M];
+
+        for(int i=0; i<N; i++){
+            for(int j=0; j<M; j++){
+                ans[i][j] = mat1[i][j] - mat2[i][j];
+            }
+        }
+        return ans;
+    }
 }
